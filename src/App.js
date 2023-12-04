@@ -12,7 +12,7 @@ function App() {
 function AppRoutes() {
   return (
     <Routes>
-      <Route path='footballmanager/' element={<AppLayout />}>
+      <Route path='/' element={<AppLayout />}>
         <Route
           path='/'
           element={
