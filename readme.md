@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 
-The application is being hosted on https://hithesh-16.github.io/footballmanager
+The application is being hosted on https://656e09609f590a0072e63c3d--shiny-narwhal-1788a6.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
