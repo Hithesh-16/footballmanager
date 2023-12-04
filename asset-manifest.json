@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/footballmanager/static/js/main.d723605f.js",
+    "main.js": "/footballmanager/static/js/main.ea376083.js",
     "static/js/789.5f3047d1.chunk.js": "/footballmanager/static/js/789.5f3047d1.chunk.js",
     "static/css/231.e0af47d5.chunk.css": "/footballmanager/static/css/231.e0af47d5.chunk.css",
     "static/js/231.919e7174.chunk.js": "/footballmanager/static/js/231.919e7174.chunk.js",
@@ -19,7 +19,7 @@
     "static/media/Poppins-ExtraBold.ttf": "/footballmanager/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
     "static/media/player-picture.png": "/footballmanager/static/media/player-picture.16a78ef778b7620efb32.png",
     "index.html": "/footballmanager/index.html",
-    "main.d723605f.js.map": "/footballmanager/static/js/main.d723605f.js.map",
+    "main.ea376083.js.map": "/footballmanager/static/js/main.ea376083.js.map",
     "789.5f3047d1.chunk.js.map": "/footballmanager/static/js/789.5f3047d1.chunk.js.map",
     "231.e0af47d5.chunk.css.map": "/footballmanager/static/css/231.e0af47d5.chunk.css.map",
     "231.919e7174.chunk.js.map": "/footballmanager/static/js/231.919e7174.chunk.js.map",
@@ -31,6 +31,6 @@
     "983.7373d1fb.chunk.js.map": "/footballmanager/static/js/983.7373d1fb.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.d723605f.js"
+    "static/js/main.ea376083.js"
   ]
 }
