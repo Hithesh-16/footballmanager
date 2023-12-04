@@ -1,8 +1,7 @@
-import { Avatar, Box, Divider, Grid, Stack, Typography } from "@mui/material";
+import { Avatar, Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { colors } from "../../../Theme/Colors.styles";
-import playerImage from "../../../Assets/Icons/player-picture.png";
-import { isEmpty, startCase } from "lodash";
+import { isEmpty } from "lodash";
 import { convertToKg, convertToMetre } from "../../../Shared/Utils/helpers";
 
 function PlayerInfo({ playerInfo: playerDetails, isValid }) {

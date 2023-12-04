@@ -6,6 +6,7 @@ import { componentStyles } from "./components.styles";
 
 export const theme = createTheme({
   palette: colors,
+  backgroundColor:colors.layout.background,
   typography: {
     fontFamily: fontMedium,
     color: colors.text.theme,

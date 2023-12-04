@@ -8,7 +8,7 @@ import { createPlayersObj } from "../Helper/FormationHelper";
 import { isEmpty } from "lodash";
 import { OverlayCell } from "../../../Shared/OverlayCell";
 
-function FormationImage({ starters, isValid, selectedPlayerDetails }) {
+function FormationImage({ starters, isValid, selectedPlayerDetails, setSelectedPlayerDetails }) {
   const arr = Array.from({ length: 25 }, (value, index) => index + 1);
 
   const [playersPositionsObj, setPlayersPositionsObj] = useState({});
@@ -71,11 +71,15 @@ function FormationImage({ starters, isValid, selectedPlayerDetails }) {
               {gridPositionsArr.includes(index + 1) && (
                 <Stack display='flex' alignItems='center'>
                   <Avatar
+                  onClick={()=>{
+                    setSelectedPlayerDetails(playersPositionsObj?.[`${item}`])
+                  }}
                     sx={{
                       backgroundColor: isSelectedPlayerPoistion(playersPositionsObj?.[`${item}`]) ? colors.primary.main : colors.layout.main,
                       border: isSelectedPlayerPoistion(playersPositionsObj?.[`${item}`]) ? "none" : "2px solid white",
                       fontSize: "16px",
-                      fontFamily: FONT.w600
+                      fontFamily: FONT.w600,
+                      cursor:'pointer'
                     }}
                   >
                     {playersPositionsObj?.[`${item}`]?.["jersey number"]}

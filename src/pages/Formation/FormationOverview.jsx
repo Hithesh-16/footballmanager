@@ -49,7 +49,7 @@ function FormationOverview() {
       <Box mt={4} sx={{ minHeight: "calc(100vh - 200px)", backgroundColor: colors.layout.secondary, radius: 8, padding: "35px 35px" }}>
         <Grid container spacing={1}>
           <Grid item xs={8} md={8} lg={8} xl={8}>
-            <FormationImage selectedPlayerDetails={selectedPlayerDetails} isValid={validationDetails?.isValid} starters={starters} />
+            <FormationImage setSelectedPlayerDetails={setSelectedPlayerDetails} selectedPlayerDetails={selectedPlayerDetails} isValid={validationDetails?.isValid} starters={starters} />
           </Grid>
           <Grid item xs={4} md={4} lg={4} xl={4}>
             <PlayerInfo playerInfo={selectedPlayerDetails} isValid={validationDetails?.isValid} />
