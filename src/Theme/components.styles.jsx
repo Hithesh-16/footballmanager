@@ -58,7 +58,7 @@ export const componentStyles = {
       root: {
         minHeight: `${BUTTON_HEIGHT}px`,
         backgroundColor: colors.layout.background,
-        marginTop: "5px",
+        marginTop:'5px',
         borderRadius: BUTTON_RADIUS,
         // border: "1px solid var(--borders-default, #494949)",
         fontSize: "14px",
@@ -109,6 +109,7 @@ export const componentStyles = {
     styleOverrides: {
       root: {
         fontFamily: FONT.w500,
+        marginTop: "0!important",
         ".MuiTypography-root,.MuiInputBase-root": {
           fontFamily: FONT.w300,
           color: colors.text.normal
@@ -125,6 +126,8 @@ export const componentStyles = {
     },
     styleOverrides: {
       root: {
+        marginTop: "0!important",
+
         borderRadius: BUTTON_RADIUS
       }
     }

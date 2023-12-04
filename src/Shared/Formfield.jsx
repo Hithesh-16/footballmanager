@@ -44,7 +44,7 @@ function Formfield(props) {
         onKeyDown={(evt) =>
           onkeyDown ? onkeyDown(evt) : restProps?.type === "number" ? ["e", "E", "+", "-"].includes(evt.key) && evt.preventDefault() : null
         }
-        sx={{ ...sx, minHeight: 20, marginTop: 1 }}
+        sx={{ ...sx, minHeight: 20, marginTop: 0 }}
         InputProps={{
           endAdornment: (endLabel || dropdownProps || endAction || endButton || showClear) && (
             <>
