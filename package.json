@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/Hithesh-16/footballmanager",
+  "homepage": "https://Hithesh-16.github.io/Hithesh-16/footballmanager",
   "name": "footballmanager",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +12,7 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.6",
     "@mui/x-data-grid": "^6.18.2",
     "@reduxjs/toolkit": "^1.9.7",
+    "gh-pages": "^6.1.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,9 +24,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
