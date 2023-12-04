@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 
-The application is being hosted on https://hithesh-16.github.io/Hithesh-16/footballmanager
+The application is being hosted on https://hithesh-16.github.io/footballmanager
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
