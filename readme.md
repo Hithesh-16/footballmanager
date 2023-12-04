@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 
-The application is being hosted on https://656e09609f590a0072e63c3d--shiny-narwhal-1788a6.netlify.app/
+The application is being hosted on https://656e1b0e0da5ef06870c71a7--euphonious-biscotti-8f5233.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
