@@ -1,7 +1,7 @@
 import { Avatar, Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { colors } from "../../../Theme/Colors.styles";
-import { isEmpty } from "lodash";
+import { capitalize, isEmpty } from "lodash";
 import { convertToKg, convertToMetre } from "../../../Shared/Utils/helpers";
 
 function PlayerInfo({ playerInfo: playerDetails, isValid }) {
@@ -95,7 +95,7 @@ function PlayerInfo({ playerInfo: playerDetails, isValid }) {
                       {playerValue(value, playerDetails?.[`${value}`])}
                     </Typography>
                     <Typography variant='12400' color={colors.text.normal}>
-                      {value}
+                      {capitalize( value)}
                     </Typography>
                   </Stack>
                 </Grid>
