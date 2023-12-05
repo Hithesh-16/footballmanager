@@ -47,7 +47,7 @@ function Team() {
   const fieldHandler = (param) => {
     setOpenField(param);
   };
-
+console.log('choco isValidCSVFormat(columns)',isValidCSVFormat(csvData?.data?.[0]))
   useEffect(() => {
     if (csvData?.data) {
       const columns = csvData?.data[0].map((col, index) => {
@@ -58,7 +58,7 @@ function Team() {
           label: col
         };
       });
-      if (isValidCSVFormat(columns) && isDataClean(csvData?.data?.slice(1))) {
+      if (isValidCSVFormat(csvData?.data?.[0]) && isDataClean(csvData?.data?.slice(1))) {
         const rows = csvData?.data.slice(1).map((row) => {
           return row.reduce((acc, curr, index) => {
             acc[columns[index].columnName] = curr.trim();
@@ -211,7 +211,7 @@ function Team() {
           setOpen={setOpenDailog}
           dialogTitle='Importer'
           footer={
-            <AppButton disabled={!isDataClean(csvData?.data?.slice(1))} onClick={importData}>
+            <AppButton disabled={!isDataClean(csvData?.data?.slice(1)) || !(isValidCSVFormat(csvData?.data?.[0]) )} onClick={importData}>
               Import
             </AppButton>
           }

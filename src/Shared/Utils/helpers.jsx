@@ -18,6 +18,10 @@ export const convertCSVToJson = (csvData) => {
 };
 
 export const isValidCSVFormat = (headers) => {
+
+  if(!headers){
+    return true
+  }
   // built on assuming the fixed columns from the given CSV
   const requiredHeaders = [
     "Player Name",
@@ -37,7 +41,8 @@ export const isValidCSVFormat = (headers) => {
     "Saves"
   ];
 
-  return requiredHeaders?.some((item) => !headers.includes(item));
+
+  return !requiredHeaders?.some((item) => !headers?.includes(item));
 };
 
 export const isDataClean = (data) => {

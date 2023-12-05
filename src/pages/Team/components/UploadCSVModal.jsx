@@ -1,7 +1,7 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import React, { useMemo } from "react";
 import CsvReader from "../../../Shared/CsvReader";
-import { isDataClean } from "../../../Shared/Utils/helpers";
+import { isDataClean, isValidCSVFormat } from "../../../Shared/Utils/helpers";
 import { colors } from "../../../Theme/Colors.styles";
 
 function UploadCSVModal(props) {
@@ -27,17 +27,17 @@ function UploadCSVModal(props) {
         </Typography>
         <CsvReader
           setCsvData={setCsvData}
-          showCSVtext={isDataClean(csvData?.data?.slice(1)) || !csvData?.data?.length}
-          showError={!isDataClean(csvData?.data?.slice(1)) && csvData?.data?.length}
+          showCSVtext={isValidCSVFormat(csvData?.data?.[0]) && (isDataClean(csvData?.data?.slice(1)) || !csvData?.data?.length)}
+          showError={(!isValidCSVFormat(csvData?.data?.[0]) || !isDataClean(csvData?.data?.slice(1))) && csvData?.data?.length}
         />
-        {!isDataClean(csvData?.data?.slice(1)) && csvData?.data?.length >= 1 && (
+        {(!isValidCSVFormat(csvData?.data?.[0]) || !isDataClean(csvData?.data?.slice(1))) && csvData?.data?.length >= 1 && (
           <Typography variant='14500' color={colors.error.main}>
             Error
           </Typography>
         )}
       </>
-      {csvData?.data?.length >= 1 &&
-        (isDataClean(csvData?.data?.slice(1)) ? (
+      {csvData?.data?.length >= 1 && (isValidCSVFormat(csvData?.data?.[0]) &&
+        (isDataClean(csvData?.data?.slice(1))) ? (
           <Box mt={2}>
             <Typography variant='14500'>File Summary</Typography>
             <Grid container spacing={2} mt={1}>
